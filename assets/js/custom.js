@@ -6,9 +6,6 @@
 			$('#single_modal_student').modal('show');
 		});
 
-		//modal show
-		$('modal#addEmployeeModal').show();
-
 		//alert function
 		function msgAlert(msg, type = 'success'){
 			return "<p class=\"alert alert-'+ type +'\">"+ msg +" ! <button class=\"close\" data-dismiss=\"alert\">&times;</button></p>"
@@ -39,6 +36,7 @@
 
 						$('form#add_student_form')[0].reset();
 						$('.mess').html(data);
+						showAllStudentData();
 
 						
 					}
@@ -50,6 +48,24 @@
 
 
 		});
+
+		//show all data connection
+		function showAllStudentData(){
+			$.ajax({
+			url : "inc/ajax/show_all.php",
+			success : function(data) {
+				$('tbody#show_all_student').html(data);
+
+			 }
+
+		   });
+
+
+	}
+	showAllStudentData();
+
+	
+		
 
 
 
