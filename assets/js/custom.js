@@ -1,10 +1,15 @@
 (function($){
 	$(document).ready(function(){
 
-		//single data show modal
-		$('a#singleshow').click(function(){
+
+		//single data show
+		$(document).on('click','a#singleshow', function(){
 			$('#single_modal_student').modal('show');
+
+			return false
 		});
+
+
 
 		//alert function
 		function msgAlert(msg, type = 'success'){
@@ -36,7 +41,7 @@
 
 						$('form#add_student_form')[0].reset();
 						$('.mess').html(data);
-						showAllStudentData();
+						// showAllStudentData();
 
 						
 					}
