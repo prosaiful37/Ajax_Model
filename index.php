@@ -65,6 +65,14 @@
         <tbody id="show_all_student">
 
 
+
+
+
+
+
+
+
+
  
         </tbody>
       </table>
@@ -206,9 +214,10 @@
 <div id="deleteEmployeeModal" class="modal fade">
   <div class="modal-dialog">
     <div class="modal-content">
-      <form>
+      <table id="stunet_del">
         <div class="modal-header">            
           <h4 class="modal-title">Delete User</h4>
+          <div class="mess2"></div>
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         </div>
         <div class="modal-body">          
@@ -217,9 +226,9 @@
         </div>
         <div class="modal-footer">
           <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-          <input type="submit" class="btn btn-danger" value="Delete">
+          <input id="delete_sted" type="submit" class="btn btn-danger" value="Delete">
         </div>
-      </form>
+      </table>
     </div>
   </div>
 </div>

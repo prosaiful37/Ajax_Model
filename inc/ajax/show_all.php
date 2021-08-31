@@ -26,10 +26,10 @@
 	<td><?php echo $all['phone']; ?></td>
 	<td><img src="media/students/<?php echo $all['photo']; ?>" alt=""></td>
 	<td>
-	  <a id="singleshow" href="#viewEmployeeModal" class="view" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="view">&#xE417;</i></a>
+	  <a id="singleshow" single_student="<?php echo $all['id']; ?>" href="#viewEmployeeModal" class="view" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="view">&#xE417;</i></a>
 	  <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-	  <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+	  <a id="delete_student" href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
 	</td>
 </tr>
 
- <?php endwhile; ?>
+<?php endwhile; ?>
